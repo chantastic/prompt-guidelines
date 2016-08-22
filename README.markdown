@@ -6,7 +6,7 @@ A user might uncover several prompts in the same session. Having those prompts f
 
 Any of these recommendations may by disregarded for the sake clarity. "MUST" rules will rarely find a good reason to be broken.
 
-In most cases, these framework will get you to a passable prompt.
+In most cases, this framework will get you to a passable prompt.
 
 ## Anatomy
 
@@ -58,7 +58,7 @@ In most cases, these framework will get you to a passable prompt.
 
 * It **SHOULD** be present.
 * It **SHOULD** clearly state the outcome of continuing.
-* It **SHOULD** clearly state side affects.
+* It **SHOULD** clearly state side effects.
 * It **SHOULD** clearly state repeatability (if any).
 
 #### Good
@@ -138,15 +138,17 @@ In most cases, these framework will get you to a passable prompt.
 
 ## Destroy Record
 
-When a user is about to delete, there should be a number of warning signs.
+A user shouldn't be able to easily delete data. Put some speed bumps in place.
 
-#### Button
+Your first line of defence is going to be the Action button. It should look pretty ominous.
 
-The button should start with "Delete", "Remove", or the like.
+#### Action Button
+
+The button should start with "Delete", "Remove", or the like. It should also be `red`.
 
 ```
 +----------------+
-|  Delete Cathy  |    <- This button should be red
+|  Delete Cathy  |    <- It's red.
 +----------------+
 ```
 
