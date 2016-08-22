@@ -28,7 +28,9 @@ In most cases, this framework will get you to a passable prompt.
 
 ## SweetAlert Preferences
 
-* [Stock icons](#dont-use-stock-icons)
+* [Don't use stock icons](#dont-use-stock-icons)
+
+---
 
 ## Headline
 
