@@ -138,7 +138,88 @@ In most cases, these framework will get you to a passable prompt.
 
 ## Destroy Record
 
-*Needs Graphic*
+When a user is about to delete, there should be a number of warning signs.
+
+#### Button
+
+The button should start with "Delete", "Remove", or the like.
+
+```
++----------------+
+|  Delete Cathy  |    <- This button should be red
++----------------+
+```
+
+#### Prompt
+
+##### Iteration 1
+
+* Headline: generic
+* Body: very specific. difficult to code.
+* Cancel Button: "Cancel"
+* Cancel Button: "Yes, ..."
+
+```
++-----------------------------------------------------------------+
+|                          Are you sure?                          |
++-----------------------------------------------------------------+
+|                                                                 |
+|  Deleting Cathy will remove her from all Planning Center apps.  |
+|     Her activity will be lost. You cannot un-delete Cathy.      |
+|                                                                 |
+|           +----------+        +---------------------+           |
+|           |  Cancel  |        |  Yes, Delete Cathy  |           |
+|           +----------+        +---------------------+           |
++-----------------------------------------------------------------+
+```
+
+##### Iteration 2
+
+* Headline: specific
+* Body: less specific. easy to code.
+* Cancel Button: "No"
+* Cancel Button: "Yes, ..."
+
+This is harder for the user to read but might spare some embarassing gender mishaps.
+
+```
++-----------------------------------------------------------------+
+|                          Delete Cathy?                          |
++-----------------------------------------------------------------+
+|                                                                 |
+|         Deleting this person will remove them from all          |
+|   Planning Center apps. They're profile and activity will be    |
+|           delted immediately. This can't be undone.             |
+|                                                                 |
+|              +------+        +---------------------+            |
+|              |  No  |        |  Yes, Delete Cathy  |            |
+|              +------+        +---------------------+            |
++-----------------------------------------------------------------+
+```
+
+##### Iteration 3
+
+* Headline: generic
+* Body: less specific. easy to code.
+* Cancel Button: "Cancel"
+* Cancel Button: "Yes, ..."
+
+If the originating button clearly says what you'll be deleting, I'd probably land on this. Generic but contextually simple.
+
+```
++-----------------------------------------------------------------+
+|                          Are you sure?                          |
++-----------------------------------------------------------------+
+|                                                                 |
+|         Deleting this person will remove them from all          |
+|   Planning Center apps. They're profile and activity will be    |
+|           delted immediately. This can't be undone.             |
+|                                                                 |
+|           +----------+        +---------------------+           |
+|           |  Cancel  |        |  Yes, Delete Cathy  |           |
+|           +----------+        +---------------------+           |
++-----------------------------------------------------------------+
+```
 
 ## Discard State
 
