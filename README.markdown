@@ -288,7 +288,7 @@ So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfo
 * Continue Button: "Yes, ..." (red)
 
 ```
-+------------------------------------------------------------+
++-------------------------------------------------------------+
 |                       Stop CSV import?                      |
 +-------------------------------------------------------------+
 |                                                             |
@@ -305,4 +305,36 @@ So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfo
 
 ## Disrupt Uncontrolled Process
 
-*Needs Graphic*
+An uncontrolled process is one that can't be cleanly stopped, rolled back, or restarted. Think mass-mailer. These are dangerous and should look like it.
+
+#### Action Button
+
+The button should be active and somewhat ominous. "Halt", "Stop", "Pause", "Interrupt", etc. "Cancel" is too passive and should be reserved for cancelling your request to interrupt the process.
+
+```
++----------------+
+|  Stop mailing  |    <- red button
++----------------+
+```
+
+#### Prompt
+
+So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* forc the "yes"/"no" respons.
+
+* Cancel Button: "No, ..." (gray/no-color)
+* Continue Button: "Yes, ..." (red)
+
+```
++-------------------------------------------------------------------+
+|                            Stop maling?                           |
++-------------------------------------------------------------------+
+|                                                                   |
+|     This email is being sent to 100 people. If you stop now,      |
+|   a portion of those people may have already recieved an email.   |
+|       This mailing cannot be picked up where it left off.         |
+|                                                                   |
+|                                  +---------------------+          |
+|       No, continue mailing       |  Yes, stop mailing  |          |
+|                                  +---------------------+          |
++-------------------------------------------------------------------+
+```
