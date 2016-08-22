@@ -159,7 +159,7 @@ The button should start with "Delete", "Remove", or the like. It should also be 
 * Headline: generic
 * Body: very specific. difficult to code.
 * Cancel Button: "Cancel"
-* Cancel Button: "Yes, ..."
+* Continue Button: "Yes, ..."
 
 ```
 +-----------------------------------------------------------------+
@@ -169,9 +169,9 @@ The button should start with "Delete", "Remove", or the like. It should also be 
 |  Deleting Cathy will remove her from all Planning Center apps.  |
 |     Her activity will be lost. You cannot un-delete Cathy.      |
 |                                                                 |
-|           +----------+        +---------------------+           |
-|           |  Cancel  |        |  Yes, Delete Cathy  |           |
-|           +----------+        +---------------------+           |
+|                               +---------------------+           |
+|              Cancel           |  Yes, Delete Cathy  |           |
+|                               +---------------------+           |
 +-----------------------------------------------------------------+
 ```
 
@@ -180,7 +180,7 @@ The button should start with "Delete", "Remove", or the like. It should also be 
 * Headline: specific
 * Body: less specific. easy to code.
 * Cancel Button: "No"
-* Cancel Button: "Yes, ..."
+* Continue Button: "Yes, ..."
 
 This is harder for the user to read but might spare some embarassing gender mishaps.
 
@@ -193,9 +193,9 @@ This is harder for the user to read but might spare some embarassing gender mish
 |   Planning Center apps. They're profile and activity will be    |
 |           delted immediately. This can't be undone.             |
 |                                                                 |
-|              +------+        +---------------------+            |
-|              |  No  |        |  Yes, Delete Cathy  |            |
-|              +------+        +---------------------+            |
+|                              +---------------------+            |
+|                 No           |  Yes, Delete Cathy  |            |
+|                              +---------------------+            |
 +-----------------------------------------------------------------+
 ```
 
@@ -204,7 +204,7 @@ This is harder for the user to read but might spare some embarassing gender mish
 * Headline: generic
 * Body: less specific. easy to code.
 * Cancel Button: "Cancel"
-* Cancel Button: "Yes, ..."
+* Continue Button: "Yes, ..."
 
 If the originating button clearly says what you'll be deleting, I'd probably land on this. Generic but contextually simple.
 
@@ -217,15 +217,48 @@ If the originating button clearly says what you'll be deleting, I'd probably lan
 |   Planning Center apps. They're profile and activity will be    |
 |           delted immediately. This can't be undone.             |
 |                                                                 |
-|           +----------+        +---------------------+           |
-|           |  Cancel  |        |  Yes, Delete Cathy  |           |
-|           +----------+        +---------------------+           |
+|                               +---------------------+           |
+|              Cancel           |  Yes, Delete Cathy  |           |
+|                               +---------------------+           |
 +-----------------------------------------------------------------+
 ```
 
 ## Discard State
 
-*Needs Graphic*
+Discarding transient state isn't destructive. The user shouldn't feel too conserned about going back or exiting the process. But You'll see that it's really hard to write body text for.
+
+The action button should look pretty safe. They shouldn't be afraid to back out of a process.
+
+#### Action Button
+
+The button read "Cancel", "Go back", "Leave", etc. It should NOT be `red`. `gray` or `no color` are appropriate.
+
+```
++-----------------------+
+|  Concel Registration  |    <- gray or no background color
++-----------------------+
+```
+
+#### Prompt
+
+So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* forc the "yes"/"no" respons.
+
+* Cancel Button: "No, ..." (gray/no-color)
+* Continue Button: "Yes, ..." (red)
+
+```
++----------------------------------------------------------------+
+|                        Cancel Registration?                    |
++----------------------------------------------------------------+
+|                                                                |
+|            You haven't completed your registration.            |
+|         If you cancel now, your progress will be lost.         |
+|                                                                |
+|                               +----------------------------+   |
+|      No, keep going           |  Yes, cancel registration  |   |
+|                               +----------------------------+   |
++----------------------------------------------------------------+
+```
 
 ## Disrupt Controlled Process
 
