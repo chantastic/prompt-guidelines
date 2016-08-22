@@ -116,11 +116,9 @@ In most cases, this framework will get you to a passable prompt.
 
 > "Continue"
 
-> "Keep going"
-
 > "Yes, delete this person"
 
-> "Yes, keep going"
+> "Yes, stop importing"
 
 #### Bad
 
@@ -192,7 +190,7 @@ This is harder for the user to read but might spare some embarrassing gender mis
 |                                                                 |
 |         Deleting this person will remove them from all          |
 |    Planning Center apps. Their profile and activity will be     |
-|           delted immediately. This can't be undone.             |
+|          deleted immediately. This can't be undone.             |
 |                                                                 |
 |                              +---------------------+            |
 |                 No           |  Yes, Delete Cathy  |            |
