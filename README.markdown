@@ -132,6 +132,7 @@ In most cases, this framework will get you to a passable prompt.
 
 * CANCEL = `NO COLOR`
 * DESTROY = `RED`
+* CAUTION = `YELLOW`
 * CREATE = `GREEN`
 * GENERIC, NON-GENERATIVE, NON-DESTRUCTIVE ACTION = `BLUE/GRAY`
 
@@ -234,14 +235,17 @@ The action button should look pretty safe. They shouldn't be afraid to back out 
 The button read "Cancel", "Go back", "Leave", etc. It should NOT be `red`. `gray` or `no color` are appropriate.
 
 ```
-+-----------------------+
-|  Concel Registration  |    <- gray or no background color
-+-----------------------+
++----------+    +----------------+
+|  Cancel  |    |  Registration  |
++----------+    +----------------+
+      ^                  ^
+      |                  |
+ (gray/none)          (green)
 ```
 
 #### Prompt
 
-So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* forc the "yes"/"no" respons.
+This prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with many options. The way out is to be explicit and *really* forc the "yes"/"no" respons.
 
 * Cancel Button: "No, ..." (gray/no-color)
 * Continue Button: "Yes, ..." (red)
@@ -262,7 +266,42 @@ So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfo
 
 ## Disrupt Controlled Process
 
-*Needs Graphic*
+A controlled process is one that can be halted or rerun with little consiquence. Users should be addiquently warned about the outcome but nothing truely distructive is happening.
+
+The Action Button color is pretty contextual. I'd guess `yellow` in the majority of cases.
+
+#### Action Button
+
+The button should read as active: "Stop", "Pause", "Interrupt", etc. "Cancel" is too passive and should be reserved for cancelling your request to interrupt the process.
+
+```
++------------------+
+|  Stop importing  |    <- dealer's choice on color
++------------------+
+```
+
+#### Prompt
+
+So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* forc the "yes"/"no" respons.
+
+* Cancel Button: "No, ..." (gray/no-color)
+* Continue Button: "Yes, ..." (red)
+
+```
++------------------------------------------------------------+
+|                       Stop CSV import?                      |
++-------------------------------------------------------------+
+|                                                             |
+|            Your CSV import has not completed.               |
+|   If you stop the import, no users will have been added.    |
+|          You may safely import this CSV later.              |
+|                                                             |
+|                               +-------------------------+   |
+|      No, keep importing       |  Yes, stop this import  |   |
+|                               +-------------------------+   |
++-------------------------------------------------------------+
+```
+
 
 ## Disrupt Uncontrolled Process
 
