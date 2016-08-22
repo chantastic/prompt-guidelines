@@ -17,7 +17,7 @@ In most cases, this framework will get you to a passable prompt.
 
 ## Color
 
-* [Color Legand](#color-legand)
+* [Color Legend](#color-legend)
 
 ## Common Cases
 
@@ -76,14 +76,14 @@ In most cases, this framework will get you to a passable prompt.
 
 > "Doing this may be dangerous."
 
-> "Deleting this person has consiquences."
+> "Deleting this person has consequences."
 
 ## Cancel Button
 
 * It **MUST** be positioned left of the Continue Button.
 * It **MUST NOT** be destructive.
 * It **SHOULD** look safe/neutral (like hitting escape).
-* It **SHOULD** read "Cancel" or be preceeded with "No, "
+* It **SHOULD** read "Cancel" or be preceded with "No, "
 * It **MAY NOT** be present (if other close option is provided).
 
 #### Good
@@ -109,7 +109,7 @@ In most cases, this framework will get you to a passable prompt.
 * It **MUST** be present.
 * It **MUST** be positioned right of the Cancel Button.
 * It's color **SHOULD** represent the action being taken.
-* It **SHOULD** read "Continue" or preceeded with "Yes, "
+* It **SHOULD** read "Continue" or preceded with "Yes, "
 * It **MAY** be destructive.
 
 #### Good
@@ -128,7 +128,7 @@ In most cases, this framework will get you to a passable prompt.
 
 > "Enter"
 
-## Color Legand
+## Color Legend
 
 * CANCEL = `NO COLOR`
 * DESTROY = `RED`
@@ -141,7 +141,7 @@ In most cases, this framework will get you to a passable prompt.
 
 A user shouldn't be able to easily delete data. Put some speed bumps in place.
 
-Your first line of defence is going to be the Action button. It should look pretty ominous.
+Your first line of defense is going to be the Action button. It should look pretty ominous.
 
 #### Action Button
 
@@ -183,7 +183,7 @@ The button should start with "Delete", "Remove", or the like. It should also be 
 * Cancel Button: "No"
 * Continue Button: "Yes, ..."
 
-This is harder for the user to read but might spare some embarassing gender mishaps.
+This is harder for the user to read but might spare some embarrassing gender mishaps.
 
 ```
 +-----------------------------------------------------------------+
@@ -226,7 +226,7 @@ If the originating button clearly says what you'll be deleting, I'd probably lan
 
 ## Discard State
 
-Discarding transient state isn't destructive. The user shouldn't feel too conserned about going back or exiting the process. But You'll see that it's really hard to write body text for.
+Discarding transient state isn't destructive. The user shouldn't feel too concerned about going back or exiting the process. But You'll see that it's really hard to write body text for.
 
 The action button should look pretty safe. They shouldn't be afraid to back out of a process.
 
@@ -245,7 +245,7 @@ The button read "Cancel", "Go back", "Leave", etc. It should NOT be `red`. `gray
 
 #### Prompt
 
-This prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with many options. The way out is to be explicit and *really* forc the "yes"/"no" respons.
+This prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with many options. The way out is to be explicit and *really* force the "yes"/"no" response.
 
 * Cancel Button: "No, ..." (gray/no-color)
 * Continue Button: "Yes, ..." (red)
@@ -266,7 +266,7 @@ This prompt is where you can find yourself in the "cancel my cancel" pit. Unfort
 
 ## Disrupt Controlled Process
 
-A controlled process is one that can be halted or rerun with little consiquence. Users should be addiquently warned about the outcome but nothing truely distructive is happening.
+A controlled process is one that can be halted or rerun with little consequence. Users should be adequately warned about the outcome but nothing truly destructive is happening.
 
 The Action Button color is pretty contextual. I'd guess `yellow` in the majority of cases.
 
@@ -282,7 +282,7 @@ The button should read as active: "Stop", "Pause", "Interrupt", etc. "Cancel" is
 
 #### Prompt
 
-So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* forc the "yes"/"no" respons.
+So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* force the "yes"/"no" response.
 
 * Cancel Button: "No, ..." (gray/no-color)
 * Continue Button: "Yes, ..." (red)
@@ -319,7 +319,7 @@ The button should be active and somewhat ominous. "Halt", "Stop", "Pause", "Inte
 
 #### Prompt
 
-So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* forc the "yes"/"no" respons.
+So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* force the "yes"/"no" response.
 
 * Cancel Button: "No, ..." (gray/no-color)
 * Continue Button: "Yes, ..." (red)
