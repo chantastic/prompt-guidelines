@@ -191,7 +191,7 @@ This is harder for the user to read but might spare some embarrassing gender mis
 +-----------------------------------------------------------------+
 |                                                                 |
 |         Deleting this person will remove them from all          |
-|   Planning Center apps. They're profile and activity will be    |
+|    Planning Center apps. Their profile and activity will be     |
 |           delted immediately. This can't be undone.             |
 |                                                                 |
 |                              +---------------------+            |
@@ -215,7 +215,7 @@ If the originating button clearly says what you'll be deleting, I'd probably lan
 +-----------------------------------------------------------------+
 |                                                                 |
 |         Deleting this person will remove them from all          |
-|   Planning Center apps. They're profile and activity will be    |
+|    Planning Center apps. Their profile and activity will be     |
 |           delted immediately. This can't be undone.             |
 |                                                                 |
 |                               +---------------------+           |
@@ -326,7 +326,7 @@ So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfo
 
 ```
 +-------------------------------------------------------------------+
-|                            Stop maling?                           |
+|                           Stop mailing?                           |
 +-------------------------------------------------------------------+
 |                                                                   |
 |     This email is being sent to 100 people. If you stop now,      |
