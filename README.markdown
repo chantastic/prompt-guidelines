@@ -1,4 +1,4 @@
-# General Guidelines
+# Prompt Guidelines
 
 This is a framework for writing `prompt` copy.
 
