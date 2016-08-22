@@ -26,6 +26,10 @@ In most cases, this framework will get you to a passable prompt.
 * [Disrupt Controlled Process](#disrupt-controlled-process)
 * [Disrupt Uncontrolled Process](#disrupt-uncontrolled-process)
 
+## SweetAlert Preferences
+
+* [Stock icons](#dont-use-stock-icons)
+
 ## Headline
 
 * It **MUST** be present.
@@ -336,3 +340,7 @@ So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfo
 |                                  +---------------------+          |
 +-------------------------------------------------------------------+
 ```
+
+## Don't use stock icons
+
+Don't use the stock icons. They don't match our aesthetic and are generally overstated. If you use these guidelines, the generic graphics won't provide much user-value.
