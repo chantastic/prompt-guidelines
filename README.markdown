@@ -36,17 +36,18 @@ In most cases, this framework will get you to a passable prompt.
 
 * It **MUST** be present.
 * It **MUST** be phrased as a question.
+* It **MUST** be written in sentence case (not Title Case).
 * It **SHOULD** be specific to the task.
 * It **SHOULD** be answerable with "yes" or "no".
 * It **MAY** be generic.
 
 #### Good
 
-> "Delete Person?"
+> "Delete person?"
 
-> "Stop Mailing?"
+> "Stop mailing?"
 
-> "Order Pizza?"
+> "Order pizza?"
 
 #### Poor but passable
 
@@ -256,7 +257,7 @@ This prompt is where you can find yourself in the "cancel my cancel" pit. Unfort
 
 ```
 +----------------------------------------------------------------+
-|                        Cancel Registration?                    |
+|                        Cancel registration?                    |
 +----------------------------------------------------------------+
 |                                                                |
 |            You haven't completed your registration.            |
