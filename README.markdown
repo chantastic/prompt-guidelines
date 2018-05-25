@@ -115,6 +115,7 @@ In most cases, this framework will get you to a passable prompt.
 
 * It **MUST** be present.
 * It **MUST** be positioned right of the Cancel Button.
+* It **MUST** be written in sentence case (not Title Case).
 * It's color **SHOULD** represent the action being taken.
 * It **SHOULD** read "Continue" or preceded with "Yes, "
 * It **MAY** be destructive.
@@ -150,12 +151,12 @@ Your first line of defense is going to be the Action button. It should look pret
 
 #### Action Button
 
-The button should start with "Delete", "Remove", or the like. It should also be `red`.
+The button should answer the question posed by the headline, and include "Delete", "Remove", or the like. It should also be `red`.
 
 ```
-+----------------+
-|  Delete Cathy  |    <- It's red.
-+----------------+
++---------------------+
+|  Yes, delete Cathy  |    <- It's red.
++---------------------+
 ```
 
 #### Prompt
@@ -176,7 +177,7 @@ The button should start with "Delete", "Remove", or the like. It should also be 
 |     Her activity will be lost. You cannot un-delete Cathy.      |
 |                                                                 |
 |                               +---------------------+           |
-|              Cancel           |  Yes, Delete Cathy  |           |
+|              Cancel           |  Yes, delete Cathy  |           |
 |                               +---------------------+           |
 +-----------------------------------------------------------------+
 ```
@@ -200,7 +201,7 @@ This is harder for the user to read but might spare some embarrassing gender mis
 |          deleted immediately. This can't be undone.             |
 |                                                                 |
 |                              +---------------------+            |
-|                 No           |  Yes, Delete Cathy  |            |
+|                 No           |  Yes, delete Cathy  |            |
 |                              +---------------------+            |
 +-----------------------------------------------------------------+
 ```
@@ -224,7 +225,7 @@ If the originating button clearly says what you'll be deleting, I'd probably lan
 |           delted immediately. This can't be undone.             |
 |                                                                 |
 |                               +---------------------+           |
-|              Cancel           |  Yes, Delete Cathy  |           |
+|              Cancel           |  Yes, delete Cathy  |           |
 |                               +---------------------+           |
 +-----------------------------------------------------------------+
 ```
